@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RainbowTap</string>
+    <string name="red">Red</string>
+    <string name="color_changer">Color Changer</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="random_color">Random Color</string>
+    <string name="save_favorite">Save Favorite</string>
+    <string name="todo">TODO</string>
+    <string name="colorsplash">ColorSplash</string>
+    <string name="redo">Redo</string>
+    <string name="share_color">Share Color</string>
+    <string name="profile_stats">Profile Stats</string>
+    <string name="tap_game">Tap Game</string>
+    <string name="rainbowtap">RainbowTap</string>
+    <string name="feature_name">Feature Name</string>
+    <string name="ToDo">TODO</string>
+    <string name="taps_game">Tap Game</string>
+    <string name="breathing">Breathing</string>
+    <string name="color_mixer">Color Mixer</string>
+    <string name="rhythm_game">Rhythm Game</string>
+    <string name="profile">Profile</string>
+    <string name="feature_names">Feature Name</string>
+    <string name="score">"Score: "</string>
+</resources>

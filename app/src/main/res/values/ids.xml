@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnTapGame" type="id" />
+    <item name="btnBreathing" type="id" />
+    <item name="btnColorMixer" type="id" />
+    <item name="btnRhythmGame" type="id" />
+    <item name="btnProfile" type="id" />
+    <item name="breathingView" type="id" />
+</resources>

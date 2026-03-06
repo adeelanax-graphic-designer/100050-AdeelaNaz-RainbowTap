@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.RainbowTap" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status and Navigation Bar customization -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- Required Material3 Color Attributes -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!-- Optional: Add the ColorButton style if you used it in your layout -->
+    <style name="ColorButton" parent="Widget.Material3.Button">
+        <item name="android:layout_margin">8dp</item>
+    </style>
+</resources>

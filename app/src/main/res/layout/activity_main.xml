@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+    <include layout="@layout/header_layout"/>
+    <Button
+        android:id="@+id/btnTapGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/taps_game"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBreathing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/breathing"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnColorMixer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/color_mixer"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnRhythmGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rhythm_game"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"/>
+</LinearLayout>

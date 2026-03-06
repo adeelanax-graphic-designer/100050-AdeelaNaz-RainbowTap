@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adeelanaz.rainbowtap">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_college_monogram"
+        android:label="RainbowTap"
+        android:roundIcon="@mipmap/ic_college_monogram"
+        android:theme="@style/Theme.RainbowTap">
+
+        <!-- Splash Activity (Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- All other activities -->
+        <activity android:name=".MainActivity" android:exported="false"/>
+        <activity android:name=".TapGameActivity" android:exported="false"/>
+        <activity android:name=".BreathingActivity" android:exported="false"/>
+        <activity android:name=".ColorMixerActivity" android:exported="false"/>
+        <activity android:name=".RhythmGameActivity" android:exported="false"/>
+        <activity android:name=".ProfileActivity" android:exported="false"/>
+    </application>
+
+</manifest>
