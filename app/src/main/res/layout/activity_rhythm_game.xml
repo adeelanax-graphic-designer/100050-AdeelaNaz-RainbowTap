@@ -1,24 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/bg_gradient"
     android:padding="24dp">
+
+    <include layout="@layout/header_layout"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match the Beat!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
 
     <TextView
         android:id="@+id/txtScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score: 0"
-        android:textSize="24sp"
-        android:textColor="#fff"
-        android:layout_marginBottom="24dp"/>
+        android:textSize="20sp"
+        android:textColor="#EEEEEE"
+        android:layout_marginBottom="40dp"/>
 
-    <View
-        android:id="@+id/tapArea"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:background="#FFFFFF"
-        android:alpha="0.8"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/beatCard"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp">
+        
+        <View
+            android:id="@+id/tapArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6200EE"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: Normal"
+        android:textColor="#FFEB3B"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"/>
+
 </LinearLayout>

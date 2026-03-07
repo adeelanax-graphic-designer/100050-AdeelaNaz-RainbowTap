@@ -14,13 +14,25 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btnTapGame = findViewById(R.id.btnTapGame);
-        Button btnBreathing = findViewById(R.id.btnBreathing);
+
         Button btnColorMixer = findViewById(R.id.btnColorMixer);
         Button btnRhythmGame = findViewById(R.id.btnRhythmGame);
         Button btnProfile = findViewById(R.id.btnProfile);
+        Button btnQuotes = findViewById(R.id.btnQuotes);
+        Button btnQuoteClipboard = findViewById(R.id.btnQuoteClipboard);
+
+        btnQuoteClipboard.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QuoteClipboardActivity.class);
+            startActivity(intent);
+        });
+
+        btnQuotes.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QuotesActivity.class);
+            startActivity(intent);
+        });
 
         btnTapGame.setOnClickListener(v -> startActivity(new Intent(this, TapGameActivity.class)));
-        btnBreathing.setOnClickListener(v -> startActivity(new Intent(this, BreathingActivity.class)));
+
         btnColorMixer.setOnClickListener(v -> startActivity(new Intent(this, ColorMixerActivity.class)));
         btnRhythmGame.setOnClickListener(v -> startActivity(new Intent(this, RhythmGameActivity.class)));
         btnProfile.setOnClickListener(v -> startActivity(new Intent(this, ProfileActivity.class)));

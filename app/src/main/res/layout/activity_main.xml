@@ -4,39 +4,54 @@
     android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light">
+    android:background="@drawable/bg_gradient">
+
     <include layout="@layout/header_layout"/>
+
     <Button
         android:id="@+id/btnTapGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/taps_game"
-        android:layout_marginBottom="12dp"/>
-
-    <Button
-        android:id="@+id/btnBreathing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/breathing"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/btnColorMixer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/color_mixer"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/btnRhythmGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/rhythm_game"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:id="@+id/btnQuotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motivational Quotes"
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:id="@+id/btnQuoteClipboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quote Clipboard"
+        android:layout_marginBottom="12dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 
     <Button
         android:id="@+id/btnProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/profile"/>
+        android:text="@string/profile"
+        style="@style/Widget.AppCompat.Button.Colored"/>
 </LinearLayout>

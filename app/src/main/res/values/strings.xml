@@ -23,4 +23,8 @@
     <string name="profile">Profile</string>
     <string name="feature_names">Feature Name</string>
     <string name="score">"Score: "</string>
+    <string name="tap_the_box">Tap the Box!</string>
+    <string name="tap_area_description" />
+    <string name="motivational_quotes">Motivational Quotes</string>
+    <string name="color_quote_clipboard">Color Quote Clipboard</string>
 </resources>

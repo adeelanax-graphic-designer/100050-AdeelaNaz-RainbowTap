@@ -1,34 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient">
+
+    <include layout="@layout/header_layout"/>
 
     <TextView
-        android:id="@+id/txtStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daily Streak: 0"
-        android:textSize="20sp"
-        android:textColor="#fff"
-        android:layout_marginBottom="12dp"/>
+        android:text="My Progress"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtStreak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Streak: 0"
+                android:textSize="22sp"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#333333"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/txtPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Points: 0"
+                android:textSize="22sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#333333"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/txtPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Points: 0"
+        android:text="Achievements"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textColor="#fff"
+        android:textStyle="bold"
         android:layout_marginBottom="12dp"/>
 
     <TextView
         android:id="@+id/txtAchievements"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Achievements:\n-"
+        android:text="- First 100 taps\n- 7-day streak\n- Mood Master"
         android:textSize="18sp"
-        android:textColor="#fff"/>
+        android:textColor="#EEEEEE"
+        android:lineSpacingExtra="8dp"
+        android:paddingStart="8dp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Progress"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:backgroundTint="#FF5252"/>
+
 </LinearLayout>
